@@ -1,0 +1,18 @@
+DROP DATABASE IF EXISTS sorvetex;
+CREATE DATABASE sorvetex;
+USE sorvetex;
+CREATE TABLE sorvetes(
+	id integer primary key auto_increment,
+    codigo integer unique,
+    grupo varchar(100),
+    custo float,
+    atacadista boolean,
+    atacado float,
+    varejo float,
+    nome varchar(150),
+    marca varchar (100),
+    quantidade integer,
+    unidade varchar(50),
+    capacidade varchar(50),
+    local varchar(150)
+     );
